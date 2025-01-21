@@ -1,11 +1,11 @@
-import java.util.Arrays;                                  //this is java.util.Arrays.asList
+import java.util.Arrays; // Arrays utility for output
 
-public class BubbleSort {                                       // this is 3rd line
+public class BubbleSort { // this is 3rd line - BRANCH1
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n; i++) { // Changed loop in branch1
             for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
+                if (arr[j] < arr[j + 1]) { // Reversed comparison in branch1
                     // Swap arr[j] and arr[j+1]
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -17,7 +17,7 @@ public class BubbleSort {                                       // this is 3rd l
 
     public static void main(String[] args) {
         int[] arr = {64, 34, 25, 12, 22, 11, 90};
-        System.out.println("Original array: " + Arrays.toString(arr));
+        System.out.println("Original array (BRANCH1): " + Arrays.toString(arr));
         bubbleSort(arr);
         System.out.println("Sorted array: " + Arrays.toString(arr));
     }
