@@ -1,10 +1,14 @@
-#include <iostream>                         //this is cpp program
+#include <iostream> //this is first line
 using namespace std;
 
-void bubbleSort(int arr[], int n) {              //this is a fn
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
+void bubbleSort(int arr[], int n)
+{ // this is 4th line
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
                 // Swap arr[j] and arr[j+1]
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
@@ -14,14 +18,17 @@ void bubbleSort(int arr[], int n) {              //this is a fn
     }
 }
 
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
+void printArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
 }
 
-int main() {
+int main()
+{
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Original array: ";

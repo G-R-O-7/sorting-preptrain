@@ -1,6 +1,6 @@
-import java.util.Arrays;                                  //imprting java arrays
+import java.util.Arrays;                                  //this is java.util.Arrays.asList
 
-public class BubbleSort {                                        //creating a class
+public class BubbleSort {                                       // this is 3rd line
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
