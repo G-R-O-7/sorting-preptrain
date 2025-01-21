@@ -1,8 +1,10 @@
 import java.util.Arrays; // Imported for arrays manipulation
 
+public class BubbleSort { // This is 3rd line - BRANCH1
 public class BubbleSort { // This is 3rd line - MAIN BRANCH
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
+        for (int i = 0; i < n; i++) { // Modified loop logic in branch1
         for (int i = 0; i < n - 1; i++) { // Logic from main
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) { // Main branch comparison
